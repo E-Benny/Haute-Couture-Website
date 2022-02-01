@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Haute Couture Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 44px;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.subtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 180%);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 40px;
+  padding: 10px;
+  gap: 1.8rem;
+  font-size: 20px;
+}
+
+figcaption {
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.fashion-pics1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.fashion-pics2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.bottom-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 6.6rem;
+  margin: 40px 20px;
+}
+
+.footer {
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #3333ff 0%, #9966ff 100%);
+  color: white;
+  padding: 20px;
+}
+
+a {
+  cursor: pointer;
+  transition: 0.8ms
+}
+
+a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+button {
+  padding: 24px;
+  width: 500px;
+  margin: 10px 10px;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: linear-gradient(to bottom right, #3333ff 0%, #9966ff 100%);
+  color: white;
+}
+
+.button-holder {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  cursor: pointer;
+}
+
+.card {
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.card0 {
+  background:  url("https://i.pinimg.com/564x/13/88/03/138803ea152186ad12c7cb6f8d8060a9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card0:hover {
+  background: url("https://i.pinimg.com/564x/2a/b9/de/2ab9de8c35cf5e3daeacf6f98a4b4ac0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card1 {
+  background: url("https://i.pinimg.com/564x/bf/e0/9e/bfe09e6b406694f964b6df9b2486191d.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card1:hover {
+  background: url("https://i.pinimg.com/564x/6d/b6/bf/6db6bfb51e8a9546b087fcab5c1fccc2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  background: url("https://i.pinimg.com/564x/70/f5/43/70f54355426389aec8bbea9003547142.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2:hover {
+  background: url("https://i.pinimg.com/564x/a8/ca/18/a8ca183b27f86ba427996e9f77af40ab.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background: url("https://i.pinimg.com/564x/92/56/e1/9256e19aff9dc02e91ea381689d69fdd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3:hover {
+  background: url("https://i.pinimg.com/564x/5d/fd/7c/5dfd7c0f3d741823708e455e1e461858.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card4 {
+  background: url("https://i.pinimg.com/564x/de/7f/60/de7f6050b95d72387499440202d8ff8b.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card4:hover {
+  background: url("https://i.pinimg.com/564x/82/4d/cb/824dcbf8145b0bbd8f9db8e9743d54ff.jpg");
+  background-size: cover;
+  backgroun-repeat: no-repeat;
+}
+
+.card5 {
+  background: url("https://i.pinimg.com/564x/7a/11/5e/7a115ec1db53998333957b89d8a263e0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card5:hover {
+  background: url("https://i.pinimg.com/564x/0c/e3/46/0ce346128f2c612af497a03c826a4399.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.benny {
+  text-decoration: none;
+  color: white;
+}
+</style>
+    </head>
+    <body>
+        <div class="webpage">
+            <div class="header">
+              <div class="logo">
+              <h1>"Benny Flizzy"</h1>
+              </div>
+              <div class="subtitle">
+              <h2>Bringing Haute Couture To Your Mailbox</h2>
+              </div>
+              <img src="https://images.theconversation.com/files/233003/original/file-20180822-149484-cs44to.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=675.0&fit=crop" alt="Header"/>
+            </div>
+            <div class="menu">
+              <p><a>Men</a></p>
+              <p><a>Women</a></p>
+              <p><a>Accessories</a></p>
+              <p><a>Collaborations</a></p>
+            </div>
+            <br>
+            <div class="fashion-pics1">
+              <div class-="column-top">
+                <div class="card card0">
+                </div>
+              <figcaption>Balenciaga Noire Jacket</figcaptions>
+              <p>$500.00</p>
+                <p>Model: Rihanna</p>
+              </div>
+              <div class="column-top">
+                <div class="card card1">
+                </div>
+              <figcaption>Balmain Dress</figcaption>
+              <p>$750.00</p>
+                <p>Model: ROSALIA</p>
+              </div>
+              <div class="column-top">
+                <div class="card card2">
+                </div>
+              <figcaption>Dior Dress</figcaption>
+              <p>$1721.00</p>
+                <p>Model: SZA</p>
+              </div>
+            </div>
+            <br>
+            <div class="button-holder">
+            <button>Shop Spring 2022 Man</button>
+            <br>
+            <button>Shop Spring 2022 Woman</button>
+            </div>
+            <div class="fashion-pics2">
+              <div class="column">
+                <div class="card card3">
+                </div>
+              <figcaption>Velour Pants</figcaption>
+              <p>$425.00</p>
+                <p>Model: A$AP Rocky</p>
+              </div>
+              <br>
+              <div class="column">
+                <div class="card card4">
+                </div>
+              <figcaption>Balenciaga Jacket</figcaption>
+              <p>$1000.00</p>
+                <p>Model: Kanye West</p>
+              </div>
+              <br>
+              <div class="column">
+                <div class="card card5">
+                </div>
+              <figcaption>Hopeless Romantic Tee</figcaption>
+              <p>$200.00</p>
+                <p>Model: Metro Boomin</p>
+              </div>
+            </div>
+            <div class="bottom-menu">
+              <p><a>About</a></p>
+              <p><a>Terms Of Use</a></p>
+              <p><a>Privacy</a></p>
+              <p><a>Cookie Policy</a></p>
+            </div>
+            <div class="footer">
+              <p>This webpage was designed and coded by <a class="benny" href="https://github.com/E-Benny" target="_blank">E-BENNY</a> (CEO of Benny Flizzy).</p>
+            </div>
+          </div> 
+    </body>
+</html>
